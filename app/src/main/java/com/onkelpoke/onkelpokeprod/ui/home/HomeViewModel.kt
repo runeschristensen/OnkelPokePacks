@@ -12,5 +12,5 @@ class HomeViewModel : ViewModel() {
     }
 
     val text: LiveData<String> = _text
-    val whiteflare: Int = R.drawable.white_flare_background
+    val blackbolt: Int = R.mipmap.blackbolt_foreground
 }

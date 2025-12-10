@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
         }
 
 
-        binding.backgroundImage.setImageResource(homeViewModel.whiteflare)
+        binding.backgroundImage.setImageResource(homeViewModel.blackbolt)
         return root
     }
 
