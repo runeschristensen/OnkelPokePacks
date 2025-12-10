@@ -1,8 +1,9 @@
-package com.onkelpoke.onkelpokeprod
+package com.onkelpoke.onkelpokeprod.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.onkelpoke.onkelpokeprod.R
 
 class HomeViewModel : ViewModel() {
 
@@ -11,5 +12,5 @@ class HomeViewModel : ViewModel() {
     }
 
     val text: LiveData<String> = _text
-    val white_flare: Int = R.drawable.white_flare_background
+    val whiteflare: Int = R.drawable.white_flare_background
 }

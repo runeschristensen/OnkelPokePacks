@@ -1,6 +1,5 @@
-package com.onkelpoke.onkelpokeprod
+package com.onkelpoke.onkelpokeprod.ui.home
 
-import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,6 +34,7 @@ class HomeFragment : Fragment() {
         }
 
 
+        binding.backgroundImage.setImageResource(homeViewModel.whiteflare)
         return root
     }
 
