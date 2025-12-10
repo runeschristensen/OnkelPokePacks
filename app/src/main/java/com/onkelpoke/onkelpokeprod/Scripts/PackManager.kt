@@ -71,7 +71,7 @@ object PackManager {
     }
 
     fun load(context: Context) {
-
+        Log.d("packmon", "loading")
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         val json = prefs.getString(PACKS_KEY, null)
 
@@ -85,7 +85,7 @@ object PackManager {
 
         packs.clear()
         packs.putAll(loadedMap)
-        Log.d("packmon", "loading")
+
 
     }
 }
