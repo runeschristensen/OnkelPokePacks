@@ -1,7 +1,9 @@
-package com.onkelpoke.unclepokepacks.backend
+package com.onkelpoke.onkelpokeprod.Scripts
 
 data class PokemonTCGPack(
-    var name: String,
+    val id: String,
+    val name: String,
     val releaseDate: String,
-    var imageResId: Int
+    val imageResId: Int,
+    var count: Int
 )

@@ -7,8 +7,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.onkelpoke.onkelpokeprod.Scripts.PackRepository
 import com.onkelpoke.onkelpokeprod.databinding.ActivityMainBinding
-import com.onkelpoke.unclepokepacks.backend.PackManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        PackManager.load(this)
+        PackRepository.load(this)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -35,6 +35,6 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onStop() {
         super.onStop()
-        PackManager.save(this)
+        PackRepository.save(this)
     }
 }

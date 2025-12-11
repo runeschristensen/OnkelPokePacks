@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/packImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/packName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pack Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/packImage"
+        app:layout_constraintTop_toTopOf="@id/packImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/packCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="x0"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/packImage"
+        app:layout_constraintBottom_toBottomOf="@id/packImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
