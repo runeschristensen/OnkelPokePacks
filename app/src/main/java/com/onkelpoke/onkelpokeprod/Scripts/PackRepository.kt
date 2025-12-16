@@ -51,13 +51,14 @@ object PackRepository {
     fun getAvailablePacks(): List<PokemonTCGPack> =
         packs.filter { it.count > 0 }
 
-    fun drawRandomPack(): PokemonTCGPack? {
+    fun drawRandomPack(context: Context): PokemonTCGPack? {
         val available = getAvailablePacks()
         if (available.isEmpty()) return null
 
         val chosen = available.random()
         chosen.count--
 
+        if (autoSave) save(context)
         return chosen
     }
 

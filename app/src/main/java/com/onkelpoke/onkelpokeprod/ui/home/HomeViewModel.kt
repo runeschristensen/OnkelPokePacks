@@ -27,7 +27,6 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         loadPacks()
-        Log.d("init", "through init")
     }
 
 
